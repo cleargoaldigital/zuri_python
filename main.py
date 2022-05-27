@@ -11,29 +11,36 @@ class Student:
             
    def change_name(self, name):
       self.name = name
-      return name
+      print(name)
 
    def change_age(self, age):
       self.age = age
-      return int(age)
+      print(int(age))
 
    def add_track(self, track):
-      self.tracks.append("track")
-      return self.tracks
+      self.tracks.append(track)
+      print(self.tracks)
 
    def set_score(self, score):
       self.score = score
 
    def get_score(self):
-      return self.score
+      print(self.score)
 
 Bob = Student(name="Bob", age=26, tracks=["FE","BE"], score=20.90)
 
 # Expected methods
-print(Bob.change_name("Peter"))
-print(Bob.change_age(34))
-print(Bob.add_track("UI/UX"))
-print(Bob.get_score())
+Bob.change_name("Peter") 
+Bob.change_age(34)
+Bob.add_track("UI/UX")
+Bob.get_score()
 
+#output
+'''
+Peter
+34
+['FE', 'BE', 'UI/UX']
+20.9
+'''
 
 
