@@ -13,8 +13,12 @@ read_data = file.read() #extract all the strings in the file.
 splitted_words = read_data.split() #split the strings into words.
 
 #loop through the splitted words and extract the frequency of unique words.
-for word in splitted_words: 
-    dictionary[word] = dictionary.get(word, 0) + 1
+for word in splitted_words:
+    if word not in dictionary:
+        dictionary[word] = 1
+    else:
+        dictionary[word] += 1
+
 print(dictionary) #print out the result.
 
 #Output
