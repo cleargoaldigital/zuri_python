@@ -14,6 +14,12 @@ while True:
     # accept input from user
     playerChoice = input("Select your weapon: ").upper()
 
+    while (playerChoice != "R" or playerChoice != "P" or playerChoice != "S"):
+        print("Invalid input.")
+        playerChoice = input("enter valid input. Enter a valid weapon: ").upper()
+        if (playerChoice == "R" or playerChoice == "P" or playerChoice == "S"):
+            break
+
     if playerChoice == "R":
         user_choice = "Rock"
     elif playerChoice == "P":
@@ -23,9 +29,9 @@ while True:
 
     # print user's choice
     print("Player choice is: ", playerChoice, ":", user_choice)
-    print("\nNow it's computer turn.......")
+    print("\nNow it's computer's turn....")
 
-    #computer selects weapon randomly
+    # CPU selects weapon randomly
     options = ["R", "P", "S"]
     computerChoice = random.choice(options)
 
@@ -37,7 +43,7 @@ while True:
         auto_choice = "Scissors"
 
     # print computer's choice
-    print("Computer choice is: ", computerChoice,":", auto_choice)
+    print("Computer's choice is: ", computerChoice,":", auto_choice)
 
     # display players' choices
     print(user_choice + " VS " + auto_choice)

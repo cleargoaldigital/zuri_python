@@ -8,12 +8,12 @@ Scissors has a higher value than paper - Scissors can cut paper.
 
 playerChoice == computerChoice : Tie
 
-playerChoice: rock - computerChoice : scissors == player wins
+playerChoice: rock - computerChoice : scissors = player wins
 
-playerChoice: paper - computerChoice : rock == player wins
+playerChoice: paper - computerChoice : rock = player wins
 
-playerChoice: scissors - computerChoice : paper == player wins
+playerChoice: scissors - computerChoice : paper = player wins
 
-playerChoice: paper - computerChoice : scissors == computer wins
+playerChoice: paper - computerChoice : scissors = computer wins
 
-playerChoice: scissors - computerChoice : rock == computer wins
+playerChoice: scissors - computerChoice : rock = computer wins
