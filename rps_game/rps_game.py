@@ -1,12 +1,6 @@
 #import random module
 import random
 
-# Rock-Paper_Scissors Game
-# A simple 2-player game.
-# Rock beats Scissors because it can crush scissors.
-# Scissors beats Paper because it can cut paper into pieces.
-# Paper beats Rock because it can wrap rock.
-
 print("Welcome to Rock-Paper-Scissors Game")
 print("General rules of the game: \n"
     +"Rock vs paper -> paper wins \n"

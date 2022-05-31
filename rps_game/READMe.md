@@ -6,14 +6,14 @@ Rock has higher value than Scissors - Rock can crush Scissors.
 
 Scissors has a higher value than paper - Scissors can cut paper.
 
-PlayerSelect === CompuerSelect : Tie
+playerChoice == computerChoice : Tie
 
-PlayerSelect: rock - CompuerSelect : scissors == playerScore++;
+playerChoice: rock - computerChoice : scissors == player wins
 
-PlayerSelect: paper - CompuerSelect : rock == playerScore++;
+playerChoice: paper - computerChoice : rock == player wins
 
-PlayerSelect: scissors - CompuerSelect : paper == playerScore++;
+playerChoice: scissors - computerChoice : paper == player wins
 
-PlayerSelect: paper - CompuerSelect : scissors == computerScore++;
+playerChoice: paper - computerChoice : scissors == computer wins
 
-PlayerSelect: scissors - CompuerSelect : rock == computerScore++;
+playerChoice: scissors - computerChoice : rock == computer wins
